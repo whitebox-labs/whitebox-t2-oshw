@@ -1,0 +1,13 @@
+Description,Reference,Qty, Value, Footprint
+T0 Whitebox Isolator,U201 U202 ,2,,tentacle:WB-T0-isolator
+LED for T0 Whitebox Isolator “on”,D201 D202 ,2,20mA,tentacle:WB-LED-G-SMD-0402
+"Resistor Size 0402, 1%, 1/8W   (i2c)",R101 R102 ,2,4.7K,tentacle:WB-R-SMD-0402
+"Resistor Size 0402, 1%, 1/8W   (enable)",R103 R104 ,2,1M,tentacle:WB-R-SMD-0402
+"Resistor Size 0402,  1%, 1/16W  (LED)",R201 R202 ,2,270,tentacle:WB-R-SMD-0402
+SMD  connector for Atlas Stamp,STP301 ,2,1x3 pin,tentacle:WB-EZO-RL
+BNC connector for sensor,P201 P202 P301 ,3,BNC,tentacle:WB-BNC
+SMD female connector for disable,P102 ,1,1x4 pin,tentacle:WB-1x4-header-female-SMD
+SMD male connector for channels 4 and 5,P302 P303,2,1x5 pin,tentacle:WB-1x5-header-male-SMD
+1x6-pin female header .1inch THT,SHIELD101,1,0.1”,tentacle-mini:WB-t2-shield
+1x8-pin female header .1inch THT,SHIELD101,2,0.1”,tentacle-mini:WB-t2-shield
+1x10-pin female header .1inch THT,SHIELD101,1,0.1”,tentacle-mini:WB-t2-shield
