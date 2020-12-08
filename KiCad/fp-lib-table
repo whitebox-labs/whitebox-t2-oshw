@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name tentacle-mini)(type KiCad)(uri ${KIPRJMOD}/libraries//tentacle-mini/tentacle-mini.pretty)(options "")(descr ""))
+  (lib (name tentacle)(type KiCad)(uri ${KIPRJMOD}/libraries/tentacle-kicad-lib/tentacle.pretty)(options "")(descr ""))
+)

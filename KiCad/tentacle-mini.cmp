@@ -1,0 +1,155 @@
+Cmp-Mod V01 Created by PcbNew   date = Mon 14 Jan 2019 19:25:46 CET
+
+BeginCmp
+TimeStamp = 5C3C2C95
+Path = 
+Reference = G***;
+ValeurCmp = LOGO;
+IdModule  = tentacle-mini:tentacle-mini-front;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD792
+Path = /5AD0E267/5AD47F11
+Reference = P301;
+ValeurCmp = BNC;
+IdModule  = tentacle-mini:WL-EB08040502_snk;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD784
+Path = /5AD0D335/5AD43B63
+Reference = P202;
+ValeurCmp = BNC;
+IdModule  = tentacle-mini:WL-EB08040502_snk;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD776
+Path = /5AD0D335/5AD3EBEB
+Reference = P201;
+ValeurCmp = BNC;
+IdModule  = tentacle-mini:WL-EB08040502_snk;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD755
+Path = /5AD0E267/5AD47E8D
+Reference = STP301;
+ValeurCmp = ATLAS_STAMP_T2;
+IdModule  = tentacle-mini:WL-EZO-13380;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD741
+Path = /5ADEF2D0
+Reference = P102;
+ValeurCmp = INT-DIS;
+IdModule  = tentacle-mini:WL-PINH_1X4-SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD729
+Path = /5AD0E267/5ADAC00A
+Reference = P302;
+ValeurCmp = NON-ISO-05;
+IdModule  = tentacle-mini:WL-PINH_1X5-SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD711
+Path = /5AD0E267/5AEA236E
+Reference = P1;
+ValeurCmp = NON-ISO-05;
+IdModule  = tentacle-mini:WL-PINH_1X5-SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD705
+Path = /5AD0D335/5ADE1952
+Reference = D202;
+ValeurCmp = LED;
+IdModule  = tentacle-mini:WL-SM0402DP;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD6F9
+Path = /5AD0D335/5ADE194B
+Reference = D201;
+ValeurCmp = LED;
+IdModule  = tentacle-mini:WL-SM0402DP;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD6F0
+Path = /5AD0D335/5ADE20D1
+Reference = R202;
+ValeurCmp = R;
+IdModule  = tentacle-mini:WL-SM0402R;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD6E7
+Path = /5AD0D335/5ADE20D8
+Reference = R201;
+ValeurCmp = R;
+IdModule  = tentacle-mini:WL-SM0402R;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD6DE
+Path = /53E8CB5D
+Reference = R102;
+ValeurCmp = 4.7K;
+IdModule  = tentacle-mini:WL-SM0402R;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD6D5
+Path = /53E8CB63
+Reference = R101;
+ValeurCmp = 4.7K;
+IdModule  = tentacle-mini:WL-SM0402R;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD6AE
+Path = /54160BFE
+Reference = SHIELD101;
+ValeurCmp = ARDUINO_SHIELD;
+IdModule  = tentacle-mini:WL-shielduno_snk_AL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD68D
+Path = /5AD0D335/5C2DFC5C
+Reference = U202;
+ValeurCmp = whitebox-isolator;
+IdModule  = tentacle-mini:whitebox-isolator;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C3CD66C
+Path = /5AD0D335/5C2E1070
+Reference = U201;
+ValeurCmp = whitebox-isolator;
+IdModule  = tentacle-mini:whitebox-isolator;
+EndCmp
+
+BeginCmp
+TimeStamp = 5C38B842
+Path = 
+Reference = fiducial;
+ValeurCmp = VAL**;
+IdModule  = tentacle_mini:WL-fiducial_1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 561B6082
+Path = 
+Reference = fiducial;
+ValeurCmp = VAL**;
+IdModule  = tentacle_mini:WL-fiducial_1mm;
+EndCmp
+
+EndListe
