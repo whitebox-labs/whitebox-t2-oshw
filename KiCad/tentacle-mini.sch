@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title "Whitebox T2 Mini MkII for Arduino"
-Date "2020-11-25"
+Title "Whitebox T2 Mini for Arduino"
+Date "2020-05-15"
 Rev "2"
 Comp "Meister Whiteboxes GmbH"
 Comment1 "Attribution-ShareAlike 4.0 International License"
@@ -30,7 +30,7 @@ L tentacle:R R102
 U 1 1 53E8CB5D
 P 6225 1150
 F 0 "R102" V 6305 1150 40  0000 C CNN
-F 1 "4.7K" V 6232 1151 40  0000 C CNN
+F 1 "4K7" V 6232 1151 40  0000 C CNN
 F 2 "tentacle:WB-R-SMD-0402" V 6155 1150 30  0001 C CNN
 F 3 "~" H 6225 1150 30  0000 C CNN
 	1    6225 1150
@@ -41,7 +41,7 @@ L tentacle:R R101
 U 1 1 53E8CB63
 P 6025 1150
 F 0 "R101" V 6105 1150 40  0000 C CNN
-F 1 "4.7K" V 6032 1151 40  0000 C CNN
+F 1 "4K7" V 6032 1151 40  0000 C CNN
 F 2 "tentacle:WB-R-SMD-0402" V 5955 1150 30  0001 C CNN
 F 3 "~" H 6025 1150 30  0000 C CNN
 	1    6025 1150
@@ -101,9 +101,8 @@ F1 "isochannels.sch" 50
 F2 "SDA" B R 2950 5450 50 
 F3 "SCL" B R 2950 5550 50 
 F4 "VSIG" I R 2950 5350 50 
-F5 "VIOREF" I R 2950 4750 50 
-F6 "ENABLE2" I R 2950 5050 50 
-F7 "ENABLE3" I R 2950 4950 50 
+F5 "ENABLE2" I R 2950 5050 50 
+F6 "ENABLE3" I R 2950 4950 50 
 $EndSheet
 $Sheet
 S 1050 3250 1900 900 
@@ -134,10 +133,6 @@ Wire Wire Line
 	2950 5350 3200 5350
 Wire Wire Line
 	3200 5350 3200 5300
-Wire Wire Line
-	2950 4750 3200 4750
-Wire Wire Line
-	3200 4750 3200 4700
 Wire Wire Line
 	8500 4300 8350 4300
 $Comp
@@ -256,17 +251,6 @@ Wire Wire Line
 	2950 3450 3800 3450
 Wire Wire Line
 	2950 3350 3500 3350
-$Comp
-L tentacle-mini:Vioref #PWR102
-U 1 1 5C662083
-P 3200 4700
-F 0 "#PWR102" H 3200 4800 50  0001 C CNN
-F 1 "Vioref" H 3200 4850 50  0000 C CNN
-F 2 "" H 3200 4700 50  0001 C CNN
-F 3 "" H 3200 4700 50  0001 C CNN
-	1    3200 4700
-	1    0    0    -1  
-$EndComp
 $Comp
 L tentacle:R R104
 U 1 1 5CC07B03
@@ -409,5 +393,19 @@ F 3 "" H 9450 4800 60  0000 C CNN
 	1    9450 4800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8500 4600
+Wire Wire Line
+	8500 4600 8350 4600
+Wire Wire Line
+	8350 4600 8350 4550
+$Comp
+L tentacle:5V #PWR0102
+U 1 1 5FD6D84A
+P 8350 4550
+F 0 "#PWR0102" H 8350 4650 50  0001 C CNN
+F 1 "5V" H 8350 4700 50  0000 C CNN
+F 2 "" H 8350 4550 50  0001 C CNN
+F 3 "" H 8350 4550 50  0001 C CNN
+	1    8350 4550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title "Whitebox T2 Mini MkII for Arduino"
-Date "2020-11-25"
+Title "Whitebox T2 Mini for Arduino"
+Date "2020-05-15"
 Rev "2"
 Comp "Meister Whiteboxes GmbH"
 Comment1 "Attribution-ShareAlike 4.0 International License"
@@ -59,15 +59,15 @@ F 3 "" H 3750 3750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L tentacle:BNC P301
+L tentacle:SMA P301
 U 1 1 5AD47F11
-P 3800 1150
-F 0 "P301" H 3800 1275 60  0000 C CNN
-F 1 "BNC" V 3910 1090 40  0000 C CNN
-F 2 "tentacle:WB-BNC" H 3800 1150 60  0001 C CNN
-F 3 "" H 3800 1150 60  0000 C CNN
-	1    3800 1150
-	0    1    -1   0   
+P 3600 1000
+F 0 "P301" H 3600 1125 60  0000 C CNN
+F 1 "SMA" V 3710 940 40  0000 C CNN
+F 2 "tentacle:WB-SMA_EDGES_CORNER" H 3600 1000 60  0001 C CNN
+F 3 "" H 3600 1000 60  0000 C CNN
+	1    3600 1000
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	7150 2400 7100 2400
@@ -145,19 +145,11 @@ PRB3
 Text Label 3600 1875 1    50   ~ 0
 PRBGND3
 Wire Wire Line
-	3600 1150 3600 1900
-Wire Wire Line
-	3900 1900 3900 1800
-Wire Wire Line
 	3900 3725 3900 3600
 Wire Wire Line
 	3750 3600 3750 4000
 Wire Wire Line
 	3600 3600 3600 4100
-Wire Wire Line
-	3750 1300 3800 1300
-Wire Wire Line
-	3750 1900 3750 1300
 Wire Notes Line
 	7550 1750 7550 1100
 Wire Notes Line
@@ -188,4 +180,36 @@ Wire Wire Line
 Connection ~ 7550 1800
 Wire Wire Line
 	7550 1800 7900 1800
+$Comp
+L tentacle:EZO_Flow J1
+U 1 1 5FAC80FF
+P 4300 1475
+F 0 "J1" H 4218 1158 50  0000 C CNN
+F 1 "EZO_Flow" H 4218 1249 50  0000 C CNN
+F 2 "tentacle:WB-1x3-pin-header-handsolder" H 4300 1475 50  0001 C CNN
+F 3 "~" H 4300 1475 50  0001 C CNN
+	1    4300 1475
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3600 1150 3600 1375
+Wire Wire Line
+	3750 1000 3750 1475
+Wire Wire Line
+	4100 1375 3600 1375
+Connection ~ 3600 1375
+Wire Wire Line
+	3600 1375 3600 1900
+Wire Wire Line
+	4100 1475 3750 1475
+Connection ~ 3750 1475
+Wire Wire Line
+	3750 1475 3750 1900
+Wire Wire Line
+	4100 1575 3900 1575
+Wire Wire Line
+	3900 1575 3900 1800
+Connection ~ 3900 1800
+Wire Wire Line
+	3900 1800 3900 1900
 $EndSCHEMATC

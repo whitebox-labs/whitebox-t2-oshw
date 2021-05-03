@@ -1,0 +1,10 @@
+(module WB-MountingHoleM2.5 (layer F.Cu) (tedit 5E6D328B)
+  (fp_text reference REF** (at 0 0.15) (layer F.Fab)
+    (effects (font (size 0.3 0.3) (thickness 0.04)))
+  )
+  (fp_text value WB-MountingHoleM2.5 (at 0 -0.15) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" thru_hole circle (at 0 0) (size 5 5) (drill 2.75) (layers *.Cu *.Mask)
+    (clearance 0.6))
+)

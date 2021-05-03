@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EZO_Flow
+D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP SMA
+D coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)
+K BNC SMA SMB SMC coaxial connector CINCH RCA
+F  ~
+$ENDCMP
+#
+$CMP SMA-old
+D coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)
+K BNC SMA SMB SMC coaxial connector CINCH RCA
+F  ~
+$ENDCMP
+#
+$CMP TestPoint
+D test point
+K test point tp
+F ~
+$ENDCMP
+#
+#End Doc Library

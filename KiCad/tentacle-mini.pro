@@ -1,4 +1,4 @@
-update=2020 December 08, Tuesday 02:44:38
+update=2021 May 04, Tuesday 00:43:25
 version=1
 last_client=kicad
 [cvpcb]
@@ -11,19 +11,9 @@ version=1
 [eeschema]
 version=1
 LibDir=
-[schematic_editor]
-version=1
-PageLayoutDescrFile=libraries/tentacle-kicad-lib/whitebox-page-layout.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=libraries/tentacle-kicad-lib/whitebox-page-layout.kicad_wks
+PageLayoutDescrFile=${KIPRJMOD}/libraries/tentacle-kicad-lib/whitebox-page-layout.kicad_wks
 LastNetListRead=tentacle-mini.net
 CopperLayerCount=2
 BoardThickness=1.6
@@ -70,9 +60,9 @@ OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
 SolderMaskClearance=0
-SolderMaskMinWidth=0.25
+SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -251,3 +241,13 @@ uViaDrill=0.127
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=${KIPRJMOD}/libraries/tentacle-kicad-lib/whitebox-page-layout.kicad_wks
+PlotDirectoryName=/Users/whiteboxes/Dropbox/whiteboxes/hardware/whitebox-t2-mini/whitebox-t2-oshw-git/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1

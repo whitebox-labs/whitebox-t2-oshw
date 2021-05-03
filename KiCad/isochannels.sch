@@ -4,8 +4,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title "Whitebox T2 Mini MkII for Arduino"
-Date "2020-11-25"
+Title "Whitebox T2 Mini for Arduino"
+Date "2020-05-15"
 Rev "2"
 Comp "Meister Whiteboxes GmbH"
 Comment1 "Attribution-ShareAlike 4.0 International License"
@@ -31,14 +31,14 @@ SCL
 Text HLabel 6400 3225 1    50   Input ~ 0
 ENABLE3
 Text HLabel 9100 2450 2    50   Input ~ 0
-VIOREF
+VSIG
 $Comp
-L tentacle:BNC P201
+L tentacle:SMA P201
 U 1 1 5AD3EBEB
 P 6400 5800
 F 0 "P201" H 6410 5920 60  0000 C CNN
-F 1 "BNC" V 6510 5740 40  0000 C CNN
-F 2 "tentacle:WB-BNC" H 6400 5800 60  0001 C CNN
+F 1 "SMA" V 6510 5740 40  0000 C CNN
+F 2 "tentacle:WB-SMA_EDGES_CORNER" H 6400 5800 60  0001 C CNN
 F 3 "" H 6400 5800 60  0000 C CNN
 	1    6400 5800
 	0    -1   1    0   
@@ -59,7 +59,7 @@ L tentacle:R R201
 U 1 1 5ADE20D8
 P 5800 5650
 F 0 "R201" V 5880 5650 50  0000 C CNN
-F 1 "R" V 5800 5650 50  0000 C CNN
+F 1 "220R" V 5800 5650 50  0000 C CNN
 F 2 "tentacle:WB-R-SMD-0402" V 5730 5650 50  0001 C CNN
 F 3 "" H 5800 5650 50  0000 C CNN
 	1    5800 5650
@@ -92,16 +92,12 @@ L tentacle:T0-Isolator U201
 U 1 1 5C2E1070
 P 6300 4150
 F 0 "U201" H 6925 4850 50  0000 C CNN
-F 1 "whitebox-isolator" H 6300 4150 50  0000 C CNN
-F 2 "tentacle:WB-T0-isolator" H 6000 3650 50  0001 C CNN
+F 1 "WHITEBOX T0" H 6300 4150 50  0000 C CNN
+F 2 "tentacle:WB-T0-isolator-temporary-bugfix" H 6000 3650 50  0001 C CNN
 F 3 "" H 6000 3650 50  0001 C CNN
 	1    6300 4150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 3300 6000 2450
-Wire Wire Line
-	5800 3300 5800 2450
 Wire Wire Line
 	6400 3300 6400 3225
 Wire Wire Line
@@ -138,15 +134,13 @@ Wire Wire Line
 	4300 3300 4300 3225
 Wire Wire Line
 	4500 3300 4500 3225
-Wire Wire Line
-	3900 3300 3900 2450
 $Comp
 L tentacle:T0-Isolator U202
 U 1 1 5C2DFC5C
 P 4400 4150
 F 0 "U202" H 5025 4850 50  0000 C CNN
-F 1 "whitebox-isolator" H 4400 4150 50  0000 C CNN
-F 2 "tentacle:WB-T0-isolator" H 4100 3650 50  0001 C CNN
+F 1 "WHITEBOX T0" H 4400 4150 50  0000 C CNN
+F 2 "tentacle:WB-T0-isolator-temporary-bugfix" H 4100 3650 50  0001 C CNN
 F 3 "" H 4100 3650 50  0001 C CNN
 	1    4400 4150
 	1    0    0    -1  
@@ -176,7 +170,7 @@ L tentacle:R R202
 U 1 1 5ADE20D1
 P 3900 5650
 F 0 "R202" V 3980 5650 50  0000 C CNN
-F 1 "R" V 3900 5650 50  0000 C CNN
+F 1 "220R" V 3900 5650 50  0000 C CNN
 F 2 "tentacle:WB-R-SMD-0402" V 3830 5650 50  0001 C CNN
 F 3 "" H 3900 5650 50  0000 C CNN
 	1    3900 5650
@@ -194,18 +188,16 @@ F 3 "~" H 3900 6000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L tentacle:BNC P202
+L tentacle:SMA P202
 U 1 1 5AD43B63
 P 4500 5825
 F 0 "P202" H 4510 5945 60  0000 C CNN
-F 1 "BNC" V 4610 5765 40  0000 C CNN
-F 2 "tentacle:WB-BNC" H 4500 5825 60  0001 C CNN
+F 1 "SMA" V 4610 5765 40  0000 C CNN
+F 2 "tentacle:WB-SMA_EDGES_CORNER" H 4500 5825 60  0001 C CNN
 F 3 "" H 4500 5825 60  0000 C CNN
 	1    4500 5825
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	4100 2450 4100 3300
 Text HLabel 4500 3225 1    50   Input ~ 0
 ENABLE2
 $Comp
@@ -223,12 +215,6 @@ Wire Wire Line
 	4900 2750 6800 2750
 Wire Wire Line
 	4700 2600 6600 2600
-Connection ~ 5800 2450
-Wire Wire Line
-	5800 2450 6000 2450
-Connection ~ 6000 2450
-Wire Wire Line
-	6000 2450 9100 2450
 Connection ~ 6600 2600
 Wire Wire Line
 	6600 2600 9100 2600
@@ -236,8 +222,42 @@ Connection ~ 6800 2750
 Wire Wire Line
 	6800 2750 9100 2750
 Wire Wire Line
-	3900 2450 4100 2450
-Connection ~ 4100 2450
+	4650 5825 4700 5825
 Wire Wire Line
-	4100 2450 5800 2450
+	6600 5800 6550 5800
+Wire Wire Line
+	6000 3300 6000 2450
+Wire Wire Line
+	4100 3300 4100 2450
+Wire Wire Line
+	4100 2450 6000 2450
+Connection ~ 6000 2450
+Wire Wire Line
+	6000 2450 9100 2450
+$Comp
+L tentacle:5V #PWR0103
+U 1 1 5FD682F8
+P 3900 3225
+F 0 "#PWR0103" H 3900 3325 50  0001 C CNN
+F 1 "5V" H 3900 3375 50  0000 C CNN
+F 2 "" H 3900 3225 50  0001 C CNN
+F 3 "" H 3900 3225 50  0001 C CNN
+	1    3900 3225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3300 3900 3225
+$Comp
+L tentacle:5V #PWR0104
+U 1 1 5FD6A169
+P 5800 3225
+F 0 "#PWR0104" H 5800 3325 50  0001 C CNN
+F 1 "5V" H 5800 3375 50  0000 C CNN
+F 2 "" H 5800 3225 50  0001 C CNN
+F 3 "" H 5800 3225 50  0001 C CNN
+	1    5800 3225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3300 5800 3225
 $EndSCHEMATC
