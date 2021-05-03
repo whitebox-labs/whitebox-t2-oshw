@@ -1,4 +1,4 @@
-model `T2.21 BNC`
+model `T2.21 SMA`
 # Whitebox T2 Mini MkII for Arduino
 
 ## Hardware repository
