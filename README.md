@@ -10,7 +10,7 @@ The Whitebox T2 Mini MkII is an Arduino Shield to easily connect and isolate Atl
 
 Hardware source files licensed under [Creative Commons BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
-Made with [![KiCAD logo](https://github.com/whitebox-labs/whitebox-docs/raw/master/tentacle/t2-mkII/_media/kicad_logo_small.png)](http://kicad-pcb.org/)
+Made with [![KiCAD logo](https://github.com/whitebox-labs/whitebox-docs/raw/master/tentacle/t2-mkII/_media/kicad_logo_small.png)](http://kicad.org/)
 
 The Whitebox T2 Mini MkII hardware source is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
